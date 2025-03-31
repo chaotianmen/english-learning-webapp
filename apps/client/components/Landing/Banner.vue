@@ -5,9 +5,9 @@
   >
     <div class="mx-auto my-5 text-center">
       <h2
-        class="bg-gradient-to-r from-purple-600 to-gray-200 bg-clip-text text-3xl font-extrabold tracking-tight text-transparent dark:from-purple-600 dark:to-gray-100 lg:text-4xl xl:text-5xl"
+        class="bg-gradient-to-r from-pink-600 to-gray-200 bg-clip-text text-3xl font-extrabold tracking-tight text-transparent dark:from-purple-600 dark:to-gray-100 lg:text-4xl xl:text-5xl"
       >
-        让你上瘾的英语学习工具
+        让你上瘾的英语学习工具测试修改
       </h2>
 
       <div class="mt-5 text-sm md:text-base xl:text-lg">
