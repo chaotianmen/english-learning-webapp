@@ -17,6 +17,10 @@ function addClarity() {
 }
 
 export default defineNuxtConfig({
+  devServer: {
+    host: '0.0.0.0',
+    port: 3000, // You can change this if needed, 3000 is the default
+  },
   ssr: false,
   // default is true, reference to https://nuxt.com/docs/guide/directory-structure/components
   // components: true,
