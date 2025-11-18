@@ -1,9 +1,9 @@
 <template>
   <header
-    class="w-full px-5 font-customFont transition-all duration-300 ease-linear"
+    class="w-full px-5 font-customFont text-white transition-all duration-300 ease-linear"
     :class="{
       'sticky top-0 z-10': isStickyNavBar,
-      'glass bg-gradient-to-r from-transparent via-white/10 to-transparent shadow-md':
+      'glass border-b border-white/10 bg-gradient-to-r from-[#131735]/70 via-[#21143d]/60 to-[#0b233f]/70 shadow-even-lg backdrop-blur-lg':
         isStickyNavBar && isScrolled,
     }"
   >
@@ -19,9 +19,17 @@
                 src="/logo.png"
                 alt="earth-worm-logo"
               />
-              <h1 class="text-wrap text-2xl font-extrabold leading-normal dark:text-white">
-                Earthworm
-              </h1>
+              <div>
+                <h1 class="text-wrap text-2xl font-extrabold leading-normal text-white">
+                  Earthworm
+                </h1>
+                <p class="mt-1 text-xs uppercase tracking-[0.2em] text-purple-200">Anime Edition</p>
+              </div>
+              <span
+                class="anime-chip ml-4 hidden bg-gradient-to-r from-purple-400/60 to-sky-300/60 md:inline-flex"
+              >
+                番剧沉浸模式
+              </span>
             </div>
           </NuxtLink>
 
@@ -37,7 +45,7 @@
                 :key="optIndex"
               >
                 <a
-                  class="text-nowrap hover:text-purple-600 dark:text-white dark:hover:text-purple-400"
+                  class="text-nowrap text-slate-100 transition hover:text-purple-200"
                   :href="optItem.href"
                   :target="optItem.target ?? '_self'"
                 >
@@ -68,7 +76,7 @@
           <button
             v-else
             aria-label="Login"
-            class="btn btn-sm mr-1 border-none bg-purple-500 text-white shadow-md hover:bg-purple-600 focus:outline-none"
+            class="btn btn-sm mr-1 border-none bg-gradient-to-r from-fuchsia-500 to-sky-400 text-white shadow-even-md transition hover:from-fuchsia-400 hover:to-sky-300 focus:outline-none"
             @click="signIn()"
           >
             登录

@@ -1,40 +1,56 @@
 <template>
   <section
-    class="pt-28 text-gray-500"
+    class="relative overflow-hidden pt-28 text-gray-100"
     id="home"
   >
-    <div class="mx-auto my-5 text-center">
-      <h2
-        class="bg-gradient-to-r from-purple-600 to-gray-200 bg-clip-text text-3xl font-extrabold tracking-tight text-transparent dark:from-purple-600 dark:to-gray-100 lg:text-4xl xl:text-5xl"
+    <div class="pointer-events-none absolute inset-0 opacity-60">
+      <div
+        class="absolute inset-10 rounded-[32px] border border-white/10 bg-gradient-to-b from-white/5 via-fuchsia-500/10 to-transparent blur-3xl"
+      />
+    </div>
+    <div class="relative mx-auto my-5 text-center">
+      <p
+        class="mx-auto w-fit rounded-full border border-white/10 bg-white/10 px-4 py-1 text-xs uppercase tracking-[0.28em] text-fuchsia-100 shadow-even-md"
       >
-        让你上瘾的英语学习工具
+        anime immersion
+      </p>
+      <h2
+        class="mt-4 bg-gradient-to-r from-fuchsia-300 via-purple-200 to-sky-200 bg-clip-text text-3xl font-extrabold tracking-tight text-transparent lg:text-4xl xl:text-5xl"
+      >
+        把英语练习变成刷番日常
       </h2>
 
-      <div class="mt-5 text-sm md:text-base xl:text-lg">
-        <p class="pt-2 text-center text-gray-500 dark:text-gray-300 lg:text-xl">
-          使用<span class="text-purple-400 dark:text-purple-200"> 连词成句 </span>、<span
-            class="text-purple-400 dark:text-purple-200"
+      <div class="mt-6 text-sm md:text-base xl:text-lg">
+        <p class="pt-2 text-center text-slate-100/90 lg:text-xl">
+          用<span class="text-fuchsia-200">番剧台词</span>、<span class="text-fuchsia-200"
+            >声优口癖</span
+          >、<span class="text-fuchsia-200">OP/ED</span>歌词做素材， 让句子练习直接连通你的爱好圈。
+        </p>
+        <p class="pt-2 text-center text-slate-100/80 lg:text-xl">
+          配合 <span class="text-fuchsia-200">连词成句</span>、<span class="text-fuchsia-200"
+            >i + 1</span
           >
-            i + 1 </span
-          >、<span class="text-purple-400 dark:text-purple-200"> 以终为始 </span
-          >等学习理论来帮助你习得英语
-        </p>
-        <p class="pt-2 text-center text-gray-500 dark:text-gray-300 lg:text-xl">
-          通过不断的<span class="text-purple-400 dark:text-purple-200"> 重复 </span>形成肌肉记忆
-        </p>
-        <p class="pt-2 text-center text-gray-500 dark:text-gray-300 lg:text-xl">
-          最重要的是<span class="text-purple-400 dark:text-purple-200"> 游戏化 </span
-          >的形式让学习英语从此不再痛苦
+          和 <span class="text-fuchsia-200">肌肉记忆复现</span>，把单词背诵变成刷剧情的衍生乐趣。
         </p>
       </div>
+
+      <div
+        class="mt-6 flex flex-wrap justify-center gap-3 text-xs uppercase tracking-[0.2em] text-fuchsia-50"
+      >
+        <span class="anime-chip bg-gradient-to-r from-fuchsia-400/60 to-purple-500/60"
+          >番剧语境</span
+        >
+        <span class="anime-chip bg-gradient-to-r from-sky-400/60 to-teal-300/60">声优台词</span>
+        <span class="anime-chip bg-gradient-to-r from-amber-300/60 to-pink-400/60">OP & ED</span>
+      </div>
     </div>
-    <div class="my-10 flex flex-wrap items-center justify-center gap-4 font-customFont">
+    <div class="relative my-10 flex flex-wrap items-center justify-center gap-4 font-customFont">
       <button
         @click="handleKeydown"
         class="btn relative"
         type="button"
       >
-        <strong>开启Earthworm</strong>
+        <strong>开启二次元 Earthworm</strong>
         <div id="container-stars">
           <div id="stars"></div>
         </div>
