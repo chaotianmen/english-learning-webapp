@@ -51,6 +51,21 @@ pnpm -v # 8+
 pnpm install
 ```
 
+### Quick Preview (Frontend Only)
+
+If you only want to preview the webapp UI without setting up the full backend stack:
+
+1. Copy the client env example: `cp ./apps/client/.env.example ./apps/client/.env`
+2. Start the client dev server from the project root:
+
+   ```bash
+   pnpm dev:client
+   ```
+
+3. Open http://localhost:3000 in your browser to see the app.
+
+For full functionality (auth, progress sync, course data), follow the complete setup below so the API, Postgres, and Redis services are running.
+
 ### 2. Configure the `.env` File
 
 You can choose to copy the contents of `./apps/api/.env.example` to`./apps/api/.env`. note that the' example' file contains sample configuration. the main storage system's environment variable information, such as database connection address, user name, password, port, key, etc. the back-end service will read the configuration from this file, **of course you can also change it to your own configuration information**.
